@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmet Toprak Ödev</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<table>
+    <tr>
+        <td><div id="game-container">
+            <canvas id="game-canvas" width="800" height="500"></canvas>
+
+            <div id="hud">
+
+                <table>
+                    <tr>
+                        <td>
+                            <div id="hearts">
+                                <span class="heart">❤</span>
+                                <span class="heart">❤</span>
+                                <span class="heart">❤</span>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div id="score-container">
+                                <span class="coin-icon"></span>
+                                <span id="score">0</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="immortal-container">
+                                <span id="immortal-screen" style="color: #f84545"></span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+            <div id="level-indicator">Seviye 1</div>
+
+            <div id="mute-button">🔊 Müzik Açık</div>
+
+            <div id="start-screen">
+                <h1>Mehmet Toprak Ödev</h1>
+                <p>Ok Tuşları yada WASD tuşlarını kullanarak hareket et</p>
+                <p>Altınları topla, düşmanların üstüne zıplayarak onları bitir, ve onlara yanlardan dokunmaktan sakın</p>
+                <button id="start-button">Oyuna Başla</button>
+            </div>
+
+            <div id="level-complete" style="display: none;">
+                <h1>Seviyeyi Geçtin!</h1>
+                <p>Skorun: <span id="level-score">0</span></p>
+                <button id="next-level">Diğer Level</button>
+            </div>
+
+            <div id="game-over" style="display: none;">
+                <h1>Oyun Bitti</h1>
+                <p>Son Puan: <span id="final-score">0</span></p>
+                <button id="restart-button">Yeniden Oyna</button>
+            </div>
+
+            <div id="game-over2" style="display: none;">
+                <h1>Oyun Bitti</h1>
+                <h2>Çok fazla hile yaptınız</h2>
+                <button id="restart-button2">Yeniden Oyna</button>
+            </div>
+
+        </div></td>
+    </tr>
+    <tr>
+        <td>
+
+            <center>
+                <H1 class="menu">Mehmet Toprak tarafından Yapılmıştır</H1>
+                <h2 class="menu">19240001408 </h2>
+                <h2 class="menu">Ok tuşları ya da WASD ile kontrol et</h2>
+                <h2 class="menu">Düşmanların üstüne zıplayarak onları <font style="color: red;">def et!</font></h2>
+                <h2 class="menu">Bütün Dökümantasyonu okumak için <a href="https://1drv.ms/w/c/94d0ce410eceb533/EZbHtZGV9XlMu_CSKVHyreoBU9W5ld9-J07Y4rnkL8NNVQ?e=jCF6wG" target="_blank"
+                >Tıklayın</a></h2>
+                <h2 class="menu">Bütün Koda bakmak ve github'a gitmek için <a href="https://github.com/mttoprak/webgamehomework" target="_blank"
+                    >Tıklayın</a></h2>
+                <br><br><br><br><br><br>
+            </center>
+
+        </td>
+    </tr>
+</table>
+
+<script src="game.js"></script>
+</body>
+</html>
